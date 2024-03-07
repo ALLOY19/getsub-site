@@ -16,19 +16,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    /* height: 500px; */
 }
 
 .gets-body img {
     height: 100px;
+
 
 }
 
 .gets-body h3 {
     left: 50%;
     font-family: "Rubik Glitch Pop", system-ui;
-
+    font-size: 400;
     
 }
 
