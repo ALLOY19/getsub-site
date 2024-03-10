@@ -3,17 +3,24 @@
 }
 
 body {
-    background-color: black;
+    background-image: linear-gradient(to bottom , black, grey);
     height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 
+.logo {
+    display: flex;
+}
+
+
 .gets-body {
-    background-color: #3b77d9;
+    background-image: linear-gradient(to right top, black, grey);
     color: white;
     display: flex;
+    flex-direction: column;
     width: 400px;
     height: 500px;
 }
@@ -22,7 +29,7 @@ body {
     height: 100px;
 }
 
-.gets-body h3 {
+.logo h3 {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     display: flex;
@@ -30,52 +37,49 @@ body {
     position: relative;
     top: 35px;
     right: 15px;
+    height: 30px;
     color: gold;
   }
 
-
-  .gets-text h4 {
-    color: rgb(182, 156, 12);
+.form {
     position: relative;
-    top: 90px;
-    right: 113px;
+    top: 130px;
+    margin: 0px 30px;
+}
+
+.navigation {
+    color: grey;
+    position: relative;
     
-  }
-
-.gets-text h5 {
-    color: rgb(182, 156, 12);
-    position: relative;
-    top: 90px;
-    right: 110px;
 }
 
 .gets-signin {
     position: relative;
-    top: 200px;
-    right: 70px;
-
 }
 
 .gets-signin input {
-    background-color: #3b77d9;
-    width: 250px;
-    height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
     color: rgb(185, 185, 185);
-    position: absolute;
-    top: 10px;
 }
 
 .gets-password {
-    position: relative;
-    top: 200px;
-    right: 70px;
+    position: relative;    
 }
 
 .gets-password input {
-    background-color: #3b77d9;
-    width: 250px;
-    height: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
     color: rgb(185, 185, 185);
-    position: absolute;
-    top: 100px;
 }
