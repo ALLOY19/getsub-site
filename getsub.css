@@ -172,3 +172,9 @@ button {
     height: 50px;
     margin-top: 12px;
 }
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
