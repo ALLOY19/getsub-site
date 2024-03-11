@@ -48,6 +48,8 @@ body {
 }
 
 .welcome-text {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     color: grey;
     margin-left: 30px;
     
@@ -58,6 +60,8 @@ body {
 }
 
 .gets-signin input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     background-color: transparent;
     box-shadow: none;
     padding-left: 10px;
@@ -74,6 +78,8 @@ body {
 }
 
 .gets-password input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     background-color: transparent;
     box-shadow: none;
     padding-left: 10px;
@@ -90,12 +96,23 @@ body {
     display: inline-block;
     width: 55px;
     height: 29px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 5px;
   }
   
   .switch input { 
     opacity: 0;
     width: 0;
     height: 0;
+  }
+
+  .password-text {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+    padding-left: 10px;
+    
   }
   
   .slider {
@@ -144,3 +161,14 @@ body {
     border-radius: 50%;
   }
   
+button {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: gold;
+    cursor: pointer;
+    color: grey;
+    border-radius: 10px;
+    width: calc(105% - 15px);
+    height: 50px;
+    margin-top: 12px;
+}
