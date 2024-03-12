@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom , black, grey);
+    background-image: linear-gradient(to bottom, black, grey);
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    
+    height: 60%;
 }
 
 .gets-body img {
@@ -39,7 +39,7 @@ body {
     right: 15px;
     height: 30px;
     color: gold;
-  }
+}
 
 .form {
     position: relative;
@@ -52,14 +52,14 @@ body {
     font-weight: 400;
     color: grey;
     margin-left: 30px;
-    
+
 }
 
-.gets-signin {
+.gets-signup {
     position: relative;
 }
 
-.gets-signin input {
+.gets-signup input {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     background-color: transparent;
@@ -74,7 +74,7 @@ body {
 }
 
 .gets-password {
-    position: relative;    
+    position: relative;
 }
 
 .gets-password input {
@@ -99,23 +99,23 @@ body {
     margin-top: 20px;
     position: relative;
     bottom: 5px;
-  }
-  
-  .switch input { 
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
 
-  .password-text {
+.password-text {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     color: grey;
     padding-left: 10px;
-    
-  }
-  
-  .slider {
+
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -125,11 +125,11 @@ body {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
 
 
-  
-  .slider:before {
+
+.slider:before {
     position: absolute;
     content: "";
     height: 21px;
@@ -137,30 +137,30 @@ body {
     left: 4px;
     bottom: 4px;
     background-color: rgb(107, 93, 14);
-    
+
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
 
-  input:checked + .slider {
+input:checked+.slider {
     background-color: rgb(214, 185, 22);
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-  
+}
+
 button {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
@@ -177,4 +177,50 @@ button {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+.forget-setup {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+
+.h4 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0 0px 20px rgb(255, 255, 5);
+    padding: 10px;
+}
+
+
+.btn:before {
+    position: absolute;
+    width: 50%;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    content: '';
+    background: rgb(142, 255, 240 / 10%);
+}
+
+.btn span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right,gold,black);
 }
