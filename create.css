@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, black, grey);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+}
+
+
+.gets-body {
+    background-image: linear-gradient(to right top, black, grey);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 60%;
+}
+
+.gets-body img {
+    height: 100px;
+}
+
+.logo h3 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    display: flex;
+    font-style: normal;
+    position: relative;
+    top: 35px;
+    right: 15px;
+    height: 30px;
+    color: gold;
+}
+
+.welcome-text {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+    margin-left: 30px;
+
+}
+
+.gets-pass {
+    position: relative;
+}
+
+.gets-pass input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
+    color: rgb(185, 185, 185);
+}
+
+.firstname input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
+    color: rgb(185, 185, 185);
+}
+
+.surname input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
+    color: rgb(185, 185, 185);
+}
+
+.gets-email input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
+    color: rgb(185, 185, 185);
+}
+
+.phone-no input {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: calc(100% - 15px);
+    height: 40px;
+    color: rgb(185, 185, 185);
+}
