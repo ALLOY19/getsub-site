@@ -38,11 +38,11 @@
             </label>
 
             <label class="gets-password">
-                <input type="password" name="password" required min="5" placeholder="Password"><br>
+                <input type="password" name="password" required min="5" placeholder="Password" id="password-input"><br>
             </label>
 
             <label class="switch">
-                <input type="checkbox">
+                <input  onclick="togglePasswordSwitch()" type="checkbox">
                 <span class="slider round"></span>
             </label>
 
@@ -87,6 +87,19 @@
 
     </section>
 
+    <script>
+        function togglePasswordSwitch() {
+            var passwordInput = document.getElementById("password-input");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+
+        }
+
+    </script>
 </body>
 
 </html>
