@@ -9,6 +9,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding-top: ;
 }
 
 .logo {
@@ -22,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 60%;
+    height: 63%;
 }
 
 .gets-body img {
@@ -64,6 +65,11 @@ body {
     width: calc(100% - 15px);
     height: 40px;
     color: rgb(185, 185, 185);
+    margin-top: 30px;
+}
+
+.firstname {
+    position: relative;
 }
 
 .firstname input {
@@ -77,6 +83,11 @@ body {
     width: calc(100% - 15px);
     height: 40px;
     color: rgb(185, 185, 185);
+    margin-top: 30px;
+}
+
+.surname {
+    position: relative;
 }
 
 .surname input {
@@ -90,6 +101,11 @@ body {
     width: calc(100% - 15px);
     height: 40px;
     color: rgb(185, 185, 185);
+    margin-top: 30px;
+}
+
+.gets-email {
+    position: relative;
 }
 
 .gets-email input {
@@ -103,6 +119,11 @@ body {
     width: calc(100% - 15px);
     height: 40px;
     color: rgb(185, 185, 185);
+    margin-top: 30px;
+}
+
+.phone-no {
+    position: relative;
 }
 
 .phone-no input {
@@ -116,4 +137,102 @@ body {
     width: calc(100% - 15px);
     height: 40px;
     color: rgb(185, 185, 185);
+    margin-top: 30px;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 29px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.password-text {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+    padding-left: 10px;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(107, 93, 14);
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(214, 185, 22);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+button {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    background-color: gold;
+    cursor: pointer;
+    color: grey;
+    border-radius: 10px;
+    width: calc(105% - 15px);
+    height: 50px;
+    margin-top: 12px;
+}
+
+h6 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+    margin-top: 10px;
+}
+
+.login-a {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+} 
