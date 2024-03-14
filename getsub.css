@@ -204,11 +204,6 @@ button {
     box-shadow: 0 0px 20px rgb(255, 255, 5);
     padding: 10px;
     border-radius: 20px;
+    text-decoration: none;
 }
 
-.terms-conditions button {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    
-}
