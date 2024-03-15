@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, black, grey);
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 120px;
+    position: relative;
+    
+}
+
+.logo h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: rgb(133, 113, 4);
+    margin-top: 40px;
+    position: relative;
+    right: 15px;
+}
+
+button {
+    background-color: gold;
+    position: absolute;
+    left: 95%;
+    bottom: 95%;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.welcome-h1 {
+    color: rgb(161, 139, 9);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
