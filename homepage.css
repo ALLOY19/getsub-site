@@ -26,7 +26,7 @@ body {
     right: 15px;
 }
 
-button {
+.menu-bar {
     background-color: gold;
     position: absolute;
     left: 95%;
@@ -41,4 +41,18 @@ button {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+.wallet-body {
+    display: flex;
+    justify-content: center;
+}
+
+.wallet {
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 10px;
 }
