@@ -14,7 +14,7 @@ body {
 .logo img {
     height: 120px;
     position: relative;
-    
+
 }
 
 .logo h1 {
@@ -48,11 +48,108 @@ body {
     justify-content: center;
 }
 
-.wallet {
+.button {
     background-color: gold;
     display: flex;
+    position: relative;
     align-items: center;
     height: 60px;
+    overflow: hidden;
     margin-top: 40px;
     border-radius: 10px;
+    cursor: pointer;
+    padding: 6px;
+    user-select: none;
 }
+
+i {
+    color: ;
+}
+
+.button::before {
+    position: absolute;
+    width: 50%;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    content: '';
+    background-color: rgb(142, 255, 240 / 10%);
+}
+
+.button span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(235, 202, 17), rgb(0, 0, 0));
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.button span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, gold, black);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%)
+    }
+    100%{
+        transform: translateY(100%)
+    }
+}
+
+.button span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, gold, black);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3{
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+.button span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, gold, black);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4{
+    0%{
+        transform: translateY(100%)
+    }
+    100%{
+        transform: translateY(-100%)
+    }
+}  
