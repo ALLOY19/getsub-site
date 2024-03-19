@@ -62,10 +62,6 @@ body {
     user-select: none;
 }
 
-i {
-    color: ;
-}
-
 .button::before {
     position: absolute;
     width: 50%;
@@ -153,3 +149,4 @@ i {
         transform: translateY(-100%)
     }
 }  
+
