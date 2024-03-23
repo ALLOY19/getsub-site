@@ -179,3 +179,7 @@ body {
     cursor: pointer;
     background-image: linear-gradient(to left, rgb(150, 128, 5), rgb(51, 16, 16));
 }
+
+.new-btn button {
+    background-image: to right, red, black;
+}
