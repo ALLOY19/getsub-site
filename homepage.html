@@ -50,24 +50,72 @@
         </div>
 
         <div class="menu-icons">
-            <button><i class="fa fa-wifi" aria-hidden="true"></i><h3>BUY DATA</h3></button>
-            <button><i class="fa fa-phone" aria-hidden="true"></i><h3>AIRTIME</h3></button>
+            <button><i class="fa fa-wifi" aria-hidden="true"></i>
+                <h3>BUY DATA</h3>
+            </button>
+            <button><i class="fa fa-phone" aria-hidden="true"></i>
+                <h3>AIRTIME</h3>
+            </button>
         </div>
 
         <div class="menu-icons2">
-            <button><i class="fa fa-lightbulb-o" aria-hidden="true"><h3>ELECTRICITY</h3></i></button>
-            <button><i class="fa fa-ellipsis-h" aria-hidden="true"></i><h3>MORE</h3></button>
-        </div>
-
-        <div>
-            <button class="btn">
-                <h3 class="btn-h3">current balance</h3>
-                <h2 class="btn-h2">0.00</h2>
+            <button><i class="fa fa-lightbulb-o" aria-hidden="true">
+                    <h3>ELECTRICITY</h3>
+                </i></button>
+            <button><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <h3>MORE</h3>
             </button>
-
         </div>
+        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+        <div class="amount">
+            <h3>Current balance
+
+                <i onclick="toggleBalance()" style="margin-left: 5px;" class="eyes fa-solid fa-eye"></i>
+            
+            </h3>
+            <h2 class="balance show">₦50,000.00</h2>
+            <h2 class="star hidden">****</h2>
+        </div>
+
 
     </div>
+
+    <script>
+
+        var balance = document.querySelector('.balance')
+
+        var hiddenBalance = document.querySelector('.star')
+
+        var eyes = document.querySelector('.eyes')
+         
+        console.log(eyes)
+
+        function toggleBalance() {
+            if (balance.classList.contains('show')) {
+
+                balance.classList.remove('show')
+                balance.classList.add('hidden')
+                eyes.classList.remove('fa-eye')
+                eyes.classList.add('fa-eye-slash')
+
+
+
+                hiddenBalance.classList.remove('hidden')
+                
+            } else {
+                hiddenBalance.classList.add('hidden')
+                balance.classList.remove('hidden')
+                balance.classList.add('show')
+                eyes.classList.remove('fa-eye-slash')
+                eyes.classList.add('fa-eye')
+            }
+
+
+        }
+
+
+    </script>
+
 </body>
 
 </html>

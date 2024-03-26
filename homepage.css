@@ -181,21 +181,48 @@ body {
     background-image: linear-gradient(to left, black,grey);
 }
 
-.btn {
+.menu-icons button h3 {
+    padding-top: 10px;
+}
+
+.menu-icons2 button h3 {
+    padding-top: 10px;
+}
+
+.amount {
     display: flex;
+    width: 50%;
+    margin-top: 30px;
+    position: relative;
+    left: 25%;
     height: 100px;
-    width: 70%;
-    margin: 30px 110px 0px;
     background-image: linear-gradient(to right, black, grey);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 15px;
 }
 
-.btn-h3 {
+.amount h3 {
     color: grey;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.btn-h2 {
+.balance {
     color: grey;
-    margin-top: 40px;
-    
+}
+
+.star {
+    color: grey;
+}
+
+.amount h3 i {
+    cursor: pointer;
+}
+
+.show {
+    display: flex !important;
+}
+
+.hidden {
+    display: none !important;
 }
