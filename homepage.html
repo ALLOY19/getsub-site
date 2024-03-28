@@ -41,7 +41,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;padding: 10px;">
                     <i class="fa-solid fa-wallet"></i>
                     <h2>Fund Wallet</h2>
                 </div>
@@ -70,7 +70,7 @@
         <div class="amount">
             <h3>Current balance
 
-                <i onclick="toggleBalance()" style="margin-left: 5px;" class="eyes fa-solid fa-eye"></i>
+                <i onclick="toggleBalance()" style="margin-left: 5px; " class="eyes fa-solid fa-eye"></i>
             
             </h3>
             <h2 class="balance show">₦50,000.00</h2>
@@ -80,6 +80,7 @@
 
     </div>
 
+
     <script>
 
         var balance = document.querySelector('.balance')
@@ -88,7 +89,7 @@
 
         var eyes = document.querySelector('.eyes')
          
-        console.log(eyes)
+        
 
         function toggleBalance() {
             if (balance.classList.contains('show')) {
@@ -112,6 +113,7 @@
 
 
         }
+
 
 
     </script>
