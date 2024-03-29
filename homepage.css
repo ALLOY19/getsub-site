@@ -7,6 +7,12 @@ body {
     height: 100vh;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
     display: flex;
 }
@@ -28,12 +34,29 @@ body {
 
 .menu-bar {
     background-color: gold;
-    position: absolute;
-    left: 95%;
-    bottom: 95%;
-    height: 30px;
+    margin-right: 2rem;
+    height: 40px;
     width: 40px;
-    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.menu-x button {
+    background-color: grey;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 6rem;
+    right: 4rem;
+}
+
+.menu-background {
+    background-color: black;
+    position: absolute;
+    right: 5%;
+    height: 30rem;
+    width: 15rem;
 }
 
 .welcome-h1 {

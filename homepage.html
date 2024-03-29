@@ -18,17 +18,32 @@
 
 <body>
     <div class="homepage-body">
-        <div class="logo">
-            <img src="https://static.vecteezy.com/system/resources/previews/017/051/640/original/g-3d-letter-isolated-with-transparent-background-gold-texture-3d-rendering-free-png.png"
-                alt="">
-            <h1>etsub</h1>
-        </div>
+        <nav>
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/017/051/640/original/g-3d-letter-isolated-with-transparent-background-gold-texture-3d-rendering-free-png.png"
+                    alt="">
+                <h1>etsub</h1>
+            </div>
 
-        <div>
             <button class="menu-bar">
                 <a class="fa fa-bars" aria-hidden="true"></a>
             </button>
+            
+        </nav>
+
+        <div class="menu-x">
+            <button>
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </button>
         </div>
+
+        <div class="menu-background">
+            <a href="">Dashboard</a>
+            <a href="">Fund wallet</a>
+            <a href="">Airtime</a>
+            <a href="">Data</a>
+        </div>
+
 
         <h1 class="welcome-h1">
             Welcome Alloy
@@ -71,7 +86,7 @@
             <h3>Current balance
 
                 <i onclick="toggleBalance()" style="margin-left: 5px; " class="eyes fa-solid fa-eye"></i>
-            
+
             </h3>
             <h2 class="balance show">₦50,000.00</h2>
             <h2 class="star hidden">****</h2>
@@ -88,8 +103,8 @@
         var hiddenBalance = document.querySelector('.star')
 
         var eyes = document.querySelector('.eyes')
-         
-        
+
+
 
         function toggleBalance() {
             if (balance.classList.contains('show')) {
@@ -102,7 +117,7 @@
 
 
                 hiddenBalance.classList.remove('hidden')
-                
+
             } else {
                 hiddenBalance.classList.add('hidden')
                 balance.classList.remove('hidden')
