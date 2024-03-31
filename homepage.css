@@ -38,25 +38,33 @@ nav {
     height: 40px;
     width: 40px;
     border-radius: 10px;
+    z-index: 2;
 }
 
-
-.menu-x button {
+.menu-background button {
     background-color: grey;
-    border-radius: 30px;
     height: 50px;
     width: 50px;
-    position: absolute;
-    top: 6rem;
-    right: 4rem;
+    border-radius: 25px;
+    cursor: pointer;
+
 }
 
 .menu-background {
-    background-color: black;
+    background-color: rgb(7, 6, 6);
     position: absolute;
-    right: 5%;
-    height: 30rem;
-    width: 15rem;
+    top: 60px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-background a {
+    text-decoration: none;
+    color: #fff;
+    width: fit-content;
+    margin: 30px 0;
+    font-size: 36px;
 }
 
 .welcome-h1 {
