@@ -38,37 +38,98 @@ nav {
     height: 40px;
     width: 40px;
     border-radius: 10px;
-    z-index: 2;
-}
-
-.menu-background button {
-    background-color: grey;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
     cursor: pointer;
-
 }
 
-.menu-background {
-    background-color: rgb(7, 6, 6);
+.menu-box {
+    width: 70%;
+    background: #020213;
     position: absolute;
-    top: 60px;
+    top: 16%;
+    left: 17%;
+    padding: 50px;
+    z-index: 10;
+    transition: top 0.3s;
+}
+
+.backdrop::before{
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.right-links {
+    position: absolute;
+    top: 30px;
     right: 30px;
     display: flex;
     align-items: center;
 }
 
-.menu-background a {
-    text-decoration: none;
-    color: #fff;
-    width: fit-content;
-    margin: 30px 0;
-    font-size: 36px;
+.right-links button {
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
+.right-links a {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: rgb(133, 113, 4);
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, black,gold);
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+
+.menu-links a {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: rgb(133, 113, 4);
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: fit-content;
+    margin: 30px 0;
+    z-index: 10;
+}
+
+.menu-links a::after{
+    content: '';
+    width: 40px;
+    height: 5px;
+    background: linear-gradient(to right, black,gold);
+    display: none;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.menu-links::before{
+
+}
+
+.menu-links a:hover{
+    font-weight: 700;
+}
+
+.menu-links a:hover::after{
+    display: inline-block;
+}
+
+
 .welcome-h1 {
-    color: rgb(161, 139, 9);
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: rgb(133, 113, 4);
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -80,8 +141,11 @@ nav {
 }
 
 .button {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    color: rgb(133, 113, 4);
     background-image: linear-gradient(to right, grey ,black);
-    color: rgb(158, 136, 10);
+    
     display: flex;
     position: relative;
     align-items: center;
@@ -188,6 +252,8 @@ nav {
 }
 
 .menu-icons button {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     height: 100px;
     width: 200px;
     margin: 30px 100px 0px;
@@ -203,6 +269,8 @@ nav {
 }
 
 .menu-icons2 button {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     height: 100px;
     width: 200px;
     margin: 30px 100px 0px;
@@ -213,14 +281,19 @@ nav {
 }
 
 .menu-icons button h3 {
+    
     padding-top: 10px;
 }
 
 .menu-icons2 button h3 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     padding-top: 10px;
 }
 
 .amount {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     display: flex;
     width: 50%;
     margin-top: 30px;

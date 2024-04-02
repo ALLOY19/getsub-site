@@ -25,24 +25,26 @@
                 <h1>etsub</h1>
             </div>
 
-            <button class="menu-bar">
+            <button class="menu-bar" onclick="openmenu()">
                 <a class="fa fa-bars" aria-hidden="true"></a>
             </button>
 
+
         </nav>
 
-        <div class="menu-background">
-            <a href="">Dashboard</a>
-            <a href="">Fund wallet</a>
-            <a href="">Airtime</a>
-            <a href="">Data</a>
-            
-            <button>
-                <i class="fa-sharp fa-solid fa-xmark"></i>
-            </button>
+        <div class="menu-box backdrop" id="menu">
+            <div class="right-links">
+                <a href="#">Get Started</a>
+                <button onclick="closemenu()"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="menu-links">
+                <a href="#">Dashboard</a>
+                <a href="#">Fund Wallet</a>
+                <a href="#">Airtime</a>
+                <a href="#">Data bunds</a>
+            </div>
         </div>
-
-
+        
 
 
         <h1 class="welcome-h1">
@@ -104,6 +106,10 @@
 
         var eyes = document.querySelector('.eyes')
 
+        var menu = document.getElementById("menu");
+
+
+
 
 
         function toggleBalance() {
@@ -127,6 +133,15 @@
             }
 
 
+        }
+
+        function closemenu(){
+            menu.style.top = "-100vh";
+            menu.classList.remove('backdrop')
+        }
+        function openmenu(){
+            menu.style.top = "17%";
+            menu.classList.add('backdrop')
         }
 
 
