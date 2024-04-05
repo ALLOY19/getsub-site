@@ -13,7 +13,101 @@
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Glitch+Pop&family=Sue+Ellen+Francisco&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
+    <nav>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/051/640/original/g-3d-letter-isolated-with-transparent-background-gold-texture-3d-rendering-free-png.png"
+                alt="">
+            <h1>etsub</h1>
+        </div>
+
+        <button class="menu-bar" onclick="openmenu()">
+            <a class="fa fa-bars" aria-hidden="true"></a>
+        </button>
+
+    </nav>
+
+    <h1 class="welcome-h1">
+        AirTime
+    </h1>
+
+    <div class="menu-box" id="menu">
+        <div class="right-links">
+            <button onclick="closemenu()"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="menu-links">
+            <a href="homepage.html">Dashboard</a>
+            <a href="walletfund.html">Fund Wallet</a>
+            <a href="">Airtime</a>
+            <a href="databunds.html">Data bunds</a>
+        </div>
+    </div>
+
+    <div class="amount">
+        <h3>Current balance
+
+            <i onclick="toggleBalance()" style="margin-left: 5px; " class="eyes fa-solid fa-eye"></i>
+
+        </h3>
+        <h2 class="balance show">₦50,000.00</h2>
+        <h2 class="star hidden">****</h2>
+    </div>
+
+    <div class="options">
+        
+    </div>
+
+    <button class="submit">
+        Submit
+    </button>
+
+
+
+    <script>
+        var balance = document.querySelector('.balance')
+
+        var hiddenBalance = document.querySelector('.star')
+
+        var eyes = document.querySelector('.eyes')
+
+        var menu = document.getElementById("menu");
+
+
+        function toggleBalance() {
+            if (balance.classList.contains('show')) {
+
+                balance.classList.remove('show')
+                balance.classList.add('hidden')
+                eyes.classList.remove('fa-eye')
+                eyes.classList.add('fa-eye-slash')
+
+
+
+                hiddenBalance.classList.remove('hidden')
+
+            } else {
+                hiddenBalance.classList.add('hidden')
+                balance.classList.remove('hidden')
+                balance.classList.add('show')
+                eyes.classList.remove('fa-eye-slash')
+                eyes.classList.add('fa-eye')
+            }
+
+
+        }
+
+
+        function closemenu() {
+            menu.style.top = "-100vh";
+            menu.classList.remove('backdrop')
+        }
+        function openmenu() {
+            menu.style.top = "16%";
+            menu.classList.add('backdrop')
+        }
+
+    </script>
     
 </body>
 </html>

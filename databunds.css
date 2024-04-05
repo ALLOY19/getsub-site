@@ -181,6 +181,8 @@ nav {
 }
 
 .submit {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
     background: rgb(155, 133, 10);
     position: relative;
     left: 30%;
