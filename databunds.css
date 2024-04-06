@@ -180,6 +180,15 @@ nav {
     margin-top: 100px;
 }
 
+.options select {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
 .submit {
     font-family: "Lobster", sans-serif;
     font-weight: 400;

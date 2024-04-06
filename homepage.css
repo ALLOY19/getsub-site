@@ -137,6 +137,12 @@ nav {
     justify-content: center;
 }
 
+.fundwalet {
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(133, 113, 4);
+}
+
 .button {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
