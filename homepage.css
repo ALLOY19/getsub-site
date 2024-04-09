@@ -23,13 +23,18 @@ nav {
 
 }
 
+.logo img {
+    position: absolute;
+    margin: 20px;
+}
+
 .logo h1 {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     color: rgb(133, 113, 4);
     margin-top: 40px;
     position: relative;
-    right: 15px;
+    left: 100px;
 }
 
 .menu-bar {
@@ -148,7 +153,6 @@ nav {
     font-weight: 400;
     color: rgb(133, 113, 4);
     background-image: linear-gradient(to right, grey ,black);
-    
     display: flex;
     position: relative;
     align-items: center;
@@ -248,6 +252,38 @@ nav {
         transform: translateY(-100%)
     }
 }  
+
+.popup {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left, black,grey);
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    transition: transform 0.1s, top 0.1s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 20%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-btn {
+    background: linear-gradient(to left, rgb(32, 32, 32),grey);
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 93%;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+    transition: 0.1s;
+}
 
 .menu-icons {
     display: flex;

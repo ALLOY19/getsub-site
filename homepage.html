@@ -20,9 +20,9 @@
     <div class="homepage-body">
         <nav>
             <div class="logo">
-                <img src="https://static.vecteezy.com/system/resources/previews/017/051/640/original/g-3d-letter-isolated-with-transparent-background-gold-texture-3d-rendering-free-png.png"
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/021/054/553/small_2x/3d-gold-effect-letter-a-free-png.png"
                     alt="">
-                <h1>etsub</h1>
+                <h1>bunds💲💲</h1>
             </div>
 
             <button class="menu-bar" onclick="openmenu()">
@@ -34,7 +34,7 @@
 
         <div class="menu-box" id="menu">
             <div class="right-links">
-                
+
                 <button onclick="closemenu()"><i class="fa-sharp fa-solid fa-xmark"></i></button>
             </div>
             <div class="menu-links">
@@ -44,7 +44,7 @@
                 <a href="databunds.html">Data bunds</a>
             </div>
         </div>
-        
+
 
 
         <h1 class="welcome-h1">
@@ -53,7 +53,7 @@
 
         <div class="wallet-body">
 
-            <div class="button">
+            <div class="button" onclick="openPopup()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -62,8 +62,15 @@
                     <i class="fa-solid fa-wallet"></i>
                     <a class="fundwalet">Fund Wallet</a>
                 </div>
+
             </div>
 
+        </div>
+
+        <div class="popup" id="popup">
+            <button class="popup-btn" onclick="closePopup()">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </button>
         </div>
 
         <div class="menu-icons">
@@ -108,6 +115,8 @@
 
         var menu = document.getElementById("menu");
 
+        let popup = document.getElementById("popup");
+
 
 
 
@@ -135,13 +144,20 @@
 
         }
 
-        function closemenu(){
+        function closemenu() {
             menu.style.top = "-100vh";
             menu.classList.remove('backdrop')
         }
-        function openmenu(){
+        function openmenu() {
             menu.style.top = "16%";
             menu.classList.add('backdrop')
+        }
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
         }
 
 

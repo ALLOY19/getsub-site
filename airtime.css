@@ -23,13 +23,18 @@ nav {
 
 }
 
+.logo img {
+    position: absolute;
+    margin: 20px;
+}
+
 .logo h1 {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     color: rgb(133, 113, 4);
     margin-top: 40px;
     position: relative;
-    right: 15px;
+    left: 100px;
 }
 
 .menu-bar {
