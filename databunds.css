@@ -57,12 +57,12 @@ nav {
     transition: top 0.3s;
 }
 
-.backdrop::before{
+.backdrop::before {
     content: "";
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
@@ -90,7 +90,7 @@ nav {
     color: rgb(133, 113, 4);
     text-decoration: none;
     color: #fff;
-    background: linear-gradient(to right, black,gold);
+    background: linear-gradient(to right, black, gold);
     padding: 15px 40px;
     border-radius: 30px;
 }
@@ -108,22 +108,22 @@ nav {
     z-index: 10;
 }
 
-.menu-links a::after{
+.menu-links a::after {
     content: '';
     width: 30px;
     height: 5px;
-    background: linear-gradient(to right, black,gold);
+    background: linear-gradient(to right, black, gold);
     display: none;
     margin-left: 10px;
     margin-bottom: 5px;
 }
 
 
-.menu-links a:hover{
+.menu-links a:hover {
     font-weight: 700;
 }
 
-.menu-links a:hover::after{
+.menu-links a:hover::after {
     display: inline-block;
 }
 
@@ -177,7 +177,7 @@ nav {
 }
 
 .options {
-    background: linear-gradient(to left, black,grey);
+    background: rgb(63, 63, 63);
     height: 30%;
     width: 40%;
     position: relative;
@@ -185,13 +185,32 @@ nav {
     margin-top: 100px;
 }
 
+
+
+
 .options select {
-    display: flex;
-    flex-direction: row;
-    
+    background-color: #fff;
+    font-size: large;
 }
 
+.provider-icon {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
+.provider-icon option {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px center;
+}
 
 
 .submit {
@@ -200,9 +219,16 @@ nav {
     background: rgb(155, 133, 10);
     position: relative;
     left: 30%;
-    margin-top: 10px;
     width: 80px;
     height: 50px;
     border-radius: 15px;
-    color: #fff;
+    background: gold;
+    cursor: pointer;
+}
+
+.submit a {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(29, 28, 28);
+    cursor: pointer;
 }
