@@ -280,9 +280,19 @@ nav {
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    margin-top: 93%;
+    position: absolute;
+    bottom: -7%;
     box-shadow: 0 5px 5px rgb(0, 0, 0);
     transition: 0.4s;
+}
+
+.fund-wallet button {
+    background-color: grey;
+    width: 350px;
+    height: 100px;
+    margin-top: 30px;
+    border-radius: 30px;
+
 }
 
 .menu-icons {

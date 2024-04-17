@@ -187,11 +187,15 @@ nav {
 
 .options input {
     height: 10%;
-    margin-top: 15px;
+    margin-top: 2px;
     border-radius: 10px;
-
+    margin-left: 1px;
 }
 
+.options h3 {
+    color: #a09e9e;
+    margin-left: 10px;
+} 
 
 .options select {
     font-size: large;
@@ -201,15 +205,13 @@ nav {
 
 }
 
-
-
 .provider-icon {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    padding: 5px;
+    padding: 7px;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 35px;
     background-position: right center;
     font-size: 16px;
     border: 1px solid #ccc;
