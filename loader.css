@@ -1,18 +1,40 @@
+body {
+  background-image: linear-gradient(to right, black, grey);
+}
+
 .loader {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: animloader 1s linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 15px solid rgb(100, 98, 98);
+  border-top-color: rgb(190, 162, 4);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn)
   }
-  
-  @keyframes animloader {
-    0% {
-      box-shadow: -72px 0 #FFF inset;
-    }
-    100% {
-      box-shadow: 48px 0 #FFF inset;
-    }
+
+  to {
+    transform: rotate(1turn)
   }
-      
+}
