@@ -18,15 +18,42 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/021/054/553/small_2x/3d-gold-effect-letter-a-free-png.png"
-                alt="">
-            <h1>bunds</h1>
+            <img src="./loggo.png" alt="">
+            <h1 class="project-name">echargeify</h1>
         </div>
+        
     </nav>
 
     <h1 class="welcome-h1">
-        WELCOME BACK
+        WELCOME BACK DAMIE
     </h1>
+
+    <button style="background-color: rgb(6, 190, 190);color: black; width: 10%; height: 100px; position: relative; left: 45%; border-radius: 20px;" onclick="makePayment()">Fund Wallet</button>
+
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script>
+        function makePayment() {
+            FlutterwaveCheckout({
+                public_key: "your-public-key",
+                tx_ref: "transaction-ref",
+                amount: 5000, // Amount to be paid
+                currency: "NGN",
+                payment_options: "card,banktransfer",
+                customer: {
+                    email: "customer-email@example.com",
+                    phonenumber: "08012345678",
+                    name: "Customer Name",
+                },
+                callback: function (data) {
+                    console.log(data);
+                    // Notify backend to update wallet balance
+                },
+                onclose: function () {
+                    console.log("Payment closed");
+                },
+            });
+        }
+    </script>
 
     <div class="amount">
         <h3>Current balance
@@ -64,6 +91,7 @@
         </form>
 
     </div>
+
 
     <script src="./airtime.js"></script>
 

@@ -1,7 +1,4 @@
-*
-
-/* General Styling */
-body {
+* body {
     font-family: 'Rubik', sans-serif;
     background: linear-gradient(to bottom, #f0f4f8, #d9e9f6);
     color: #333;
@@ -9,12 +6,26 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #004aad;
+    background: rgb(245, 204, 204);
     color: white;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -25,10 +36,10 @@ nav .logo {
     align-items: center;
 }
 
-nav .logo img {
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
+img {
+    height: 100px;
+    position: relative;
+    left: 25px;
 }
 
 nav h1 {
@@ -36,7 +47,7 @@ nav h1 {
     font-family: 'Lobster', cursive;
 }
 
-/* Welcome Text */
+
 .welcome-h1 {
     text-align: center;
     margin: 20px 0;
@@ -44,7 +55,7 @@ nav h1 {
     color: #004aad;
 }
 
-/* Balance Section */
+
 .amount {
     text-align: center;
     background: white;
@@ -74,7 +85,7 @@ nav h1 {
     color: #ff6347;
 }
 
-/* Form Section */
+
 .options {
     background: white;
     padding: 20px;
@@ -109,7 +120,7 @@ nav h1 {
     box-shadow: 0 0 4px rgba(0, 74, 173, 0.5);
 }
 
-/* Buttons */
+
 button {
     width: 100%;
     padding: 10px;
@@ -127,7 +138,7 @@ button:hover {
     background: #003580;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     nav h1 {
         font-size: 20px;
